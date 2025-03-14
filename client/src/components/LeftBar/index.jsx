@@ -1,26 +1,27 @@
+import Image from '../Image'
 import style from './style.module.css'
 const LeftBar = () => {
   return (
     <div className={style.leftBar}>
       <div className={style.menuIcons}>
         <a href="/" className={style.menuIcon}>
-          <img src="/general/logo.png" alt="Logo" className={style.logo} />
+          <Image path="/general/logo.png" alt="Logo" className={style.logo} />
         </a>
         <a href="/" className={style.menuIcon}>
-          <img src="/general/home.svg" alt="Logo" />
+          <Image path="/general/home.svg" alt="Home" />
         </a>
         <a href="/" className={style.menuIcon}>
-          <img src="/general/create.svg" alt="Logo" />
+          <Image path="/general/create.svg" alt="create" />
         </a>
         <a href="/" className={style.menuIcon}>
-          <img src="/general/updates.svg" alt="Logo" />
+          <Image path="/general/updates.svg" alt="update" />
         </a>
         <a href="/" className={style.menuIcon}>
-          <img src="/general/messages.svg" alt="Logo" />
+          <Image path="/general/messages.svg" alt="messages" />
         </a>
       </div>
       <a href="/" className={style.menuIcon}>
-        <img src="/general/settings.svg" alt="Logo" />
+        <Image path="/general/settings.svg" alt="settings" />
       </a>
     </div>
   )
